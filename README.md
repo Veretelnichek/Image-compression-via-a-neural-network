@@ -23,19 +23,19 @@
 * **Субдискретизация (Max Pooling)**: Окно `2x2`, шаг = 2. Линейные размеры изображения сокращаются в 2 раза на каждом этапе.
 
 <p align="center">
-  <img src="assets/images/encoder_arch.png" alt="Архитектура энкодера" width="500"/>
+  <img src="image compression autoencoder/assets/images/encoder_arch.png" alt="Архитектура энкодера" width="500"/>
   <br>
   <em>Рисунок 1 — Архитектура энкодера</em>
 </p>
 
 <p align="center">
-  <img src="assets/images/decoder_arch.png" alt="Архитектура декодера" width="400"/>
+  <img src="image compression autoencoder/assets/images/decoder_arch.png" alt="Архитектура декодера" width="400"/>
   <br>
   <em>Рисунок 2 — Архитектура декодера</em>
 </p>
 
 <p align="center">
-  <img src="assets/images/avtoencoder_arch.png" alt="Архитектура автоэнкодера" width="400"/>
+  <img src="image compression autoencoder/assets/images/avtoencoder_arch.png" alt="Архитектура автоэнкодера" width="400"/>
   <br>
   <em>Рисунок 3 — Архитектура декодера</em>
 </p>
@@ -56,7 +56,7 @@
 * **Финальные показатели**: Значение MS-SSIM опустилось до уровня `0.12`, Chroma Loss — до `10` условных единиц, а MSE составило `0.0023`. Чем ближе данные показатели к 0, тем точнее восстановление.
 
 <p align="center">
-  <img src="assets/images/loss_curves.png" alt="Кривые ошибок обучения" width="600"/>
+  <img src="image compression autoencoder/assets/images/loss_curves.png" alt="Кривые ошибок обучения" width="600"/>
   <br>
   <em>Рисунок 4 — Кривые ошибок обучения Автоэнкодера</em>
 </p>
@@ -68,7 +68,7 @@
 После завершения обучения модель успешно справляется с передачей структуры, цветовой насыщенности и палитры исходных изображений.
 
 <p align="center">
-  <img src="assets/images/test_results.png" alt="Тестирование работы модели" width="600"/>
+  <img src="image compression autoencoder/assets/images/test_results.png" alt="Тестирование работы модели" width="600"/>
   <br>
   <em>Рисунок 5 — Тестирование автоэнкодера (Оригинал / Сжатое представление / Восстановленное изображение)</em>
 </p>
